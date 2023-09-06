@@ -1,0 +1,78 @@
+ARM COMPILER V2.40a,  LCD_4BIT                                                             04/09/23  17:02:04  PAGE 1   
+
+
+ARM COMPILER V2.40a, COMPILATION OF MODULE LCD_4BIT
+OBJECT MODULE PLACED IN LCD_4BIT.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe LCD_4BIT.C THUMB BROWSE DEBUG TABS(4) 
+
+stmt  level    source
+
+    1          #include <lpc214x.h>
+    2          #include <stdint.h>
+*** ERROR C318 IN LINE 2 OF LCD_4BIT.C: can't open file 'stdint.h'
+    3          #include <stdlib.h>
+    4          #include <stdio.h>
+    5          
+    6          void delay_ms(uint16_t j) /* Function for delay in milliseconds */
+*** ERROR C25 IN LINE 6 OF LCD_4BIT.C: syntax error near 'j'
+    7          {
+*** WARNING C35 IN LINE 7 OF LCD_4BIT.C: 'delay_ms': uses old-style declarator
+    8   1          uint16_t x, i;
+*** ERROR C25 IN LINE 8 OF LCD_4BIT.C: syntax error near 'x'
+*** WARNING C34 IN LINE 8 OF LCD_4BIT.C: 'x': missing declaration specifiers
+*** WARNING C34 IN LINE 8 OF LCD_4BIT.C: 'i': missing declaration specifiers
+    9   1          for (i = 0; i < j; i++)
+*** ERROR C25 IN LINE 9 OF LCD_4BIT.C: syntax error near 'for'
+*** ERROR C25 IN LINE 9 OF LCD_4BIT.C: syntax error near '='
+*** ERROR C25 IN LINE 9 OF LCD_4BIT.C: syntax error near '<'
+*** WARNING C34 IN LINE 9 OF LCD_4BIT.C: 'j': missing declaration specifiers
+*** ERROR C25 IN LINE 9 OF LCD_4BIT.C: syntax error near '++'
+   10   1          {
+   11   1              for (x = 0; x < 6000; x++); /* loop to generate 1 millisecond delay with Cclk = 60MHz */
+*** ERROR C25 IN LINE 11 OF LCD_4BIT.C: syntax error near '='
+*** ERROR C25 IN LINE 11 OF LCD_4BIT.C: syntax error near '<'
+*** ERROR C25 IN LINE 11 OF LCD_4BIT.C: syntax error near '++'
+   12   1          }
+   13   1      }
+   14   1      
+   15   1      void LCD_CMD(char command)
+   16   1      {
+   17   2          IO1PIN = ((IO1PIN & 0xFFF0FFFF) | ((command & 0xF0) << 16)); /* Upper nibble of command on P1.20 to P
+             -1.23 */
+   18   2          IO0SET = 0x00000440; /* EN = 1 (P0.10), RS = 1 (P0.11), RW = 0 (P0.20) */
+   19   2          delay_ms(5);
+   20   2          IO0CLR = 0x00000440; /* EN = 0, RS and RW unchanged (i.e., RS = 1, RW = 0) */
+   21   2          delay_ms(5);
+   22   2          IO1PIN = ((IO1PIN & 0xFFF0FFFF) | ((command & 0x0F) << 20)); /* Lower nibble of command on P1.20 to P
+             -1.23 */
+   23   2          IO0SET = 0x00000440; /* EN = 1, RS = 1, RW = 0 */
+   24   2          delay_ms(5);
+   25   2          IO0CLR = 0x00000440; /* EN = 0, RS and RW unchanged (i.e., RS = 1, RW = 0) */
+   26   2          delay_ms(5);
+   27   2      }
+   28   1      
+   29   1      void LCD_INIT(void)
+   30   1      {
+   31   2          IO1DIR = 0x00F00000; /* P1.20 to P1.23 LCD Data */
+   32   2          IO0DIR |= 0x00000440; /* P0.10, P0.11, and P0.20 as EN, RS, and RW */
+   33   2          delay_ms(20);
+   34   2          LCD_CMD(0x02); /* Initialize LCD in 4-bit mode */
+   35   2          LCD_CMD(0x28); /* 2 lines */
+   36   2          LCD_CMD(0x0C); /* Display on, cursor off */
+   37   2          LCD_CMD(0x06); /* Auto increment cursor */
+   38   2          LCD_CMD(0x01); /* Display clear */
+   39   2          LCD_CMD(0x80); /* First line, first position */
+   40   2      }
+   41   1      
+   42   1      void LCD_STRING(char *msg)
+   43   1      {
+ARM COMPILER V2.40a,  LCD_4BIT                                                             04/09/23  17:02:04  PAGE 2   
+
+   44   2          uint8_t i = 0;
+*** ERROR C67 IN LINE 44 OF LCD_4BIT.C: 'uint8_t': undefined identifier
+*** ERROR C25 IN LINE 44 OF LCD_4BIT.C: syntax error near 'i'
+   45   2          while (msg[i] != 0)
+*** ERROR C25 IN LINE 45 OF LCD_4BIT.C: syntax error near 'while'
+*** ERROR C7 IN LINE 45 OF LCD_4BIT.C: compilation aborted
+
+ARM COMPILATION COMPLETE.  4 WARNING(S),  14 ERROR(S)
