@@ -7,3 +7,1543 @@ C:\Users\mayan\Documents\ARM\LCD_4bit\LCD_4BIT.uv2
 Project File Date:  09/05/2023
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(6): warning C140: 'Delay' undefined; assuming 'extern int Delay()'
+LCD_4BIT.C(7): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(19): error C25: syntax error near 'rs'
+LCD_4BIT.C(19): error C25: syntax error near '=='
+LCD_4BIT.C(20): error C25: syntax error near 'volatile'
+LCD_4BIT.C(20): error C25: syntax error near ')'
+LCD_4BIT.C(20): error C25: syntax error near '1'
+LCD_4BIT.C(23): error C25: syntax error near 'volatile'
+LCD_4BIT.C(23): error C25: syntax error near ')'
+LCD_4BIT.C(23): error C25: syntax error near '1'
+LCD_4BIT.C(25): error C25: syntax error near 'volatile'
+LCD_4BIT.C(25): error C25: syntax error near ')'
+LCD_4BIT.C(25): error C25: syntax error near '<<'
+LCD_4BIT.C(25): error C7: compilation aborted
+compiling main.c...
+main.c(6): warning C135: 'main': no return value
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling LCD_4BIT.C...
+LCD_4BIT.C(9): error C25: syntax error near '}'
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(25): error C25: syntax error near 'void'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+main.c(6): warning C135: 'main': no return value
+Target not created
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(28): error C25: syntax error near 'rs'
+LCD_4BIT.C(28): error C25: syntax error near '=='
+LCD_4BIT.C(29): error C25: syntax error near 'volatile'
+LCD_4BIT.C(29): error C25: syntax error near ')'
+LCD_4BIT.C(29): error C25: syntax error near '1'
+LCD_4BIT.C(32): error C25: syntax error near 'volatile'
+LCD_4BIT.C(32): error C25: syntax error near ')'
+LCD_4BIT.C(32): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '<<'
+LCD_4BIT.C(34): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(30): error C25: syntax error near 'rs'
+LCD_4BIT.C(30): error C25: syntax error near '=='
+LCD_4BIT.C(31): error C25: syntax error near 'volatile'
+LCD_4BIT.C(31): error C25: syntax error near ')'
+LCD_4BIT.C(31): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '1'
+LCD_4BIT.C(36): error C25: syntax error near 'volatile'
+LCD_4BIT.C(36): error C25: syntax error near ')'
+LCD_4BIT.C(36): error C25: syntax error near '<<'
+LCD_4BIT.C(36): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(30): error C25: syntax error near 'rs'
+LCD_4BIT.C(30): error C25: syntax error near '=='
+LCD_4BIT.C(31): error C25: syntax error near 'volatile'
+LCD_4BIT.C(31): error C25: syntax error near ')'
+LCD_4BIT.C(31): error C25: syntax error near '1'
+LCD_4BIT.C(34): error C25: syntax error near 'volatile'
+LCD_4BIT.C(34): error C25: syntax error near ')'
+LCD_4BIT.C(34): error C25: syntax error near '1'
+LCD_4BIT.C(36): error C25: syntax error near 'volatile'
+LCD_4BIT.C(36): error C25: syntax error near ')'
+LCD_4BIT.C(36): error C25: syntax error near '<<'
+LCD_4BIT.C(36): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(33): error C25: syntax error near '}'
+LCD_4BIT.C(36): error C25: syntax error near 'volatile'
+LCD_4BIT.C(36): error C25: syntax error near ')'
+LCD_4BIT.C(36): error C25: syntax error near '1'
+LCD_4BIT.C(39): error C25: syntax error near 'volatile'
+LCD_4BIT.C(39): error C25: syntax error near ')'
+LCD_4BIT.C(39): error C25: syntax error near '<<'
+LCD_4BIT.C(41): error C25: syntax error near 'volatile'
+LCD_4BIT.C(41): error C25: syntax error near ')'
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(33): error C25: syntax error near '}'
+LCD_4BIT.C(36): error C25: syntax error near 'volatile'
+LCD_4BIT.C(36): error C25: syntax error near ')'
+LCD_4BIT.C(36): error C25: syntax error near '1'
+LCD_4BIT.C(39): error C25: syntax error near 'volatile'
+LCD_4BIT.C(39): error C25: syntax error near ')'
+LCD_4BIT.C(39): error C25: syntax error near '<<'
+LCD_4BIT.C(41): error C25: syntax error near 'volatile'
+LCD_4BIT.C(41): error C25: syntax error near ')'
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(39): error C25: syntax error near '='
+LCD_4BIT.C(39): error C25: syntax error near '<<'
+LCD_4BIT.C(41): error C25: syntax error near 'volatile'
+LCD_4BIT.C(41): error C25: syntax error near ')'
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(43): error C25: syntax error near 'volatile'
+LCD_4BIT.C(43): error C25: syntax error near ')'
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(45): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(39): error C25: syntax error near '='
+LCD_4BIT.C(39): error C25: syntax error near '<<'
+LCD_4BIT.C(41): error C25: syntax error near 'volatile'
+LCD_4BIT.C(41): error C25: syntax error near ')'
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(43): error C25: syntax error near 'volatile'
+LCD_4BIT.C(43): error C25: syntax error near ')'
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(45): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(41): error C25: syntax error near '='
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(43): error C25: syntax error near 'volatile'
+LCD_4BIT.C(43): error C25: syntax error near ')'
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(40): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(41): error C25: syntax error near '='
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(43): error C25: syntax error near 'volatile'
+LCD_4BIT.C(43): error C25: syntax error near ')'
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(41): error C25: syntax error near '='
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(43): error C25: syntax error near 'volatile'
+LCD_4BIT.C(43): error C25: syntax error near ')'
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(40): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(41): error C25: syntax error near '='
+LCD_4BIT.C(41): error C25: syntax error near '1'
+LCD_4BIT.C(42): error C25: syntax error near '10'
+LCD_4BIT.C(42): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(43): error C25: syntax error near 'volatile'
+LCD_4BIT.C(43): error C25: syntax error near ')'
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(43): error C25: syntax error near '='
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(43): error C25: syntax error near '='
+LCD_4BIT.C(43): error C25: syntax error near '1'
+LCD_4BIT.C(44): error C25: syntax error near '10'
+LCD_4BIT.C(44): error C53: redefinition of 'Delay': different return types
+LCD_4BIT.C(45): error C25: syntax error near '}'
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(53): error C25: syntax error near 'datatosend'
+LCD_4BIT.C(53): error C53: redefinition of 'datatosend'
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C25: syntax error near '<<'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C25: syntax error near '<<'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C25: syntax error near '<<'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C25: syntax error near '<<'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(68): error C95: 'lcd_send_data': too many actual parameters
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C25: syntax error near '<<'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+LCD_4BIT.C(72): error C95: 'lcd_send_data': too many actual parameters
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+LCD.H(16): error C53: redefinition of 'Delay': function already defined
+LCD.H(25): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(38): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(40): error C25: syntax error near 'rs'
+LCD.H(40): error C25: syntax error near '=='
+LCD.H(41): error C25: syntax error near 'volatile'
+LCD.H(41): error C25: syntax error near ')'
+LCD.H(41): error C25: syntax error near '1'
+LCD.H(44): error C25: syntax error near 'volatile'
+LCD.H(44): error C25: syntax error near ')'
+LCD.H(44): error C25: syntax error near '1'
+LCD.H(46): error C25: syntax error near 'volatile'
+LCD.H(46): error C25: syntax error near ')'
+LCD.H(46): error C25: syntax error near '<<'
+LCD.H(46): error C7: compilation aborted
+compiling LCD_4BIT.C...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+LCD.H(17): error C53: redefinition of 'lcd_init': function already defined
+LCD.H(30): error C53: redefinition of 'send_to_lcd': function already defined
+LCD.H(32): error C25: syntax error near 'rs'
+LCD.H(32): error C25: syntax error near '=='
+LCD.H(33): error C25: syntax error near 'volatile'
+LCD.H(33): error C25: syntax error near ')'
+LCD.H(33): error C25: syntax error near '1'
+LCD.H(36): error C25: syntax error near 'volatile'
+LCD.H(36): error C25: syntax error near ')'
+LCD.H(36): error C25: syntax error near '1'
+LCD.H(38): error C25: syntax error near 'volatile'
+LCD.H(38): error C25: syntax error near ')'
+LCD.H(38): error C25: syntax error near '<<'
+LCD.H(38): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=1168 const=34 code=732
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=732
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+MAIN.C(6): error C67: 'F': undefined identifier
+MAIN.C(7): error C67: 'F': undefined identifier
+compiling LCD_4BIT.C...
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=768
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=788
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=788
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=816
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=816
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=820
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=828
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=828
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=828
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_4BIT.C...
+LCD_4BIT.C(16): warning C140: 'lcd_send_cmd' undefined; assuming 'extern int lcd_send_cmd()'
+LCD_4BIT.C(70): error C53: redefinition of 'lcd_send_cmd': different return types
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000012H  
+Program Size: data=1288 const=34 code=732
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000012H  
+Program Size: data=1288 const=34 code=732
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_4BIT.C...
+assembling Startup.s...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_4BIT.C...
+assembling Startup.s...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=19 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_4BIT.C...
+assembling Startup.s...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=19 code=270
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=19 code=270
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=19 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=19 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=832
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=796
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=804
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=804
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=804
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=812
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+LCD_4BIT.C(38): error C25: syntax error near '<EOF>'
+LCD_4BIT.C(38): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=816
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=820
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=820
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=820
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling LCD_4BIT.C...
+linking...
+Program Size: data=1168 const=34 code=812
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_init?T
+    ADDRESS: 00000188H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_put_cur?T
+    ADDRESS: 00000196H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_send_string?T
+    ADDRESS: 000001A2H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_put_cur?T
+    ADDRESS: 000001B0H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_send_string?T
+    ADDRESS: 000001BCH
+Program Size: data=1168 const=34 code=492
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): error C318: can't open file 'lpc2148.h'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): error C318: can't open file 'lpc2148.h'
+assembling Startup.s...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_init?T
+    ADDRESS: 00000188H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_put_cur?T
+    ADDRESS: 00000196H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_send_string?T
+    ADDRESS: 000001A2H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_put_cur?T
+    ADDRESS: 000001B0H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  lcd_send_string?T
+    ADDRESS: 000001BCH
+Program Size: data=1168 const=34 code=492
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+linking...
+Program Size: data=1168 const=34 code=812
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+linking...
+Program Size: data=1168 const=34 code=812
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+linking...
+Program Size: data=1168 const=34 code=812
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+linking...
+Program Size: data=1168 const=34 code=848
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000012H  
+Program Size: data=1288 const=34 code=748
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+linking...
+Program Size: data=1168 const=34 code=848
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD_4BIT.C...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_cmd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  Delay?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_init?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  send_to_lcd?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_data?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_put_cur?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  lcd_send_string?T
+    MODULE:  LCD_4BIT.obj (LCD_4BIT)
+   DEFINED:  main.obj (main)
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1168 const=18 code=270
+Target not created
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=848
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=848
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=848
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=844
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=848
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=844
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=26 code=828
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=868
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=884
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=888
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+assembling Startup.s...
+compiling LCD.c...
+linking...
+Program Size: data=1168 const=34 code=888
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling yash.c...
+linking...
+Program Size: data=1176 const=44 code=892
+creating hex file from "LCD_4BIT"...
+"LCD_4BIT" - 0 Error(s), 0 Warning(s).

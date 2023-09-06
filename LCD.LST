@@ -1,14 +1,14 @@
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 1   
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 1   
 
 
-ARM COMPILER V2.40a, COMPILATION OF MODULE LCD_4BIT
-OBJECT MODULE PLACED IN LCD_4BIT.OBJ
-COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe LCD_4BIT.C THUMB BROWSE DEBUG TABS(4) 
+ARM COMPILER V2.40a, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN LCD.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe LCD.c THUMB BROWSE DEBUG TABS(4) 
 
 stmt  level    source
 
     1          #include "lpc214x.h"
-    2          
+    2          #include "LCD.h"
     3          void lcd_send_cmd(char cmd);
     4          
     5          void Delay(unsigned int i)
@@ -39,83 +39,87 @@ stmt  level    source
    30   1          if (rs == 1)
    31   1          {
    32   2              IOSET0 |= (1 << 11);  // Set RS (Register Select) pin
-   33   2          }
-   34   1          else
-   35   1          {
-   36   2              IOCLR0 |= (1 << 11);  // Clear RS (Register Select) pin
-   37   2          }
-   38   1      
-   39   1          // Set data pins (P1.20 to P1.23) with the lower 4 bits of 'data'
-   40   1          IOCLR1 |= 0x0F << 20;    // Clear data pins (P1.20 to P1.23)
-   41   1          IOSET1 |= ((data & 0x0F) << 20);  // Set data pins with the lower 4 bits of 'data'
+   33   2              IOCLR0 |= ( 1<< 20);
+   34   2              Delay(1000);
+   35   2          }
+   36   1          else
+   37   1          {
+   38   2              IOCLR0 |= (1 << 11);  // Clear RS (Register Select) pin
+   39   2              IOCLR0 |= ( 1<< 20);
+   40   2              Delay(1000);
+   41   2          }
    42   1      
-   43   1          // Toggle EN (Enable) pin (P0.20) to send the data
-   44   1          IOSET0 |= (1 << 10);  // Set EN (Enable) pin
-   45   1          Delay(10);            // Delay for a short duration
-   46   1          IOCLR0 |= (1 << 10);  // Clear EN (Enable) pin to finish sending
-   47   1          Delay(10);            // Delay for a short duration
-   48   1      }
-   49          
-   50          
-   51          
-   52          void lcd_send_cmd(char cmd)
-   53          {
-   54   1          
-   55   1          char datatosend;
-   56   1          //Send Upper nibble firsr
-   57   1          datatosend = ((cmd>>4) & 0x0F);
-   58   1          send_to_lcd(datatosend,0);
-   59   1      
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 2   
+   43   1          // Set data pins (P1.20 to P1.23) with the lower 4 bits of 'data'
+   44   1          IOCLR1 |= 0xFF << 20;    // Clear data pins (P1.20 to P1.23)
+   45   1          IOSET1 |= ((data & 0x0F) << 20);  // Set data pins with the lower 4 bits of 'data'
+   46   1      
+   47   1          // Toggle EN (Enable) pin (P0.20) to send the data
+   48   1          IOSET0 |= (1 << 10);  // Set EN (Enable) pin
+   49   1          Delay(10);            // Delay for a short duration
+   50   1          IOCLR0 |= (1 << 10);  // Clear EN (Enable) pin to finish sending
+   51   1          Delay(10);            // Delay for a short duration
+   52   1      }
+   53          
+   54          
+   55          
+   56          void lcd_send_cmd(char cmd)
+   57          {
+   58   1          
+   59   1          char datatosend;
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 2   
 
-   60   1          // Send lower nibble
-   61   1          datatosend = ((cmd) & 0x0F);
-   62   1          send_to_lcd(datatosend,0); 
-   63   1      }
-   64          
-   65          
-   66          void lcd_send_data(unsigned char data)
-   67          {
-   68   1          char datatosend;
-   69   1          
-   70   1          //Send the higher nibble first
-   71   1          datatosend = ((data >>4) & 0x0F);
-   72   1          send_to_lcd(datatosend,1);
-   73   1      
-   74   1          //send lower nibble
-   75   1          datatosend = data & (0x0F);
+   60   1          //Send Upper nibble firsr
+   61   1          datatosend = ((cmd>>4) & 0x0F);
+   62   1          send_to_lcd(datatosend,0);
+   63   1      
+   64   1          // Send lower nibble
+   65   1          datatosend = ((cmd) & 0x0F);
+   66   1          send_to_lcd(datatosend,0); 
+   67   1      }
+   68          
+   69          
+   70          void lcd_send_data(unsigned char data)
+   71          {
+   72   1          char datatosend;
+   73   1          
+   74   1          //Send the higher nibble first
+   75   1          datatosend = ((data >>4) & 0x0F);
    76   1          send_to_lcd(datatosend,1);
    77   1      
-   78   1      }
-   79          
-   80          //void lcd_clear (void)
-   81          //{
-   82          //  lcd_send_cmd(0x01);
-   83          //  HAL_Delay(2);
-   84          //}
-   85          
-   86          void lcd_put_cur(int row, int col)
-   87          {
-   88   1          switch (row)
-   89   1          {
-   90   2              case 0:
-   91   2                  col |= 0x80;
-   92   2                  break;
-   93   2              case 1:
-   94   2                  col |= 0xC0;
-   95   2                  break;
-   96   2          }
-   97   1      
-   98   1          lcd_send_cmd (col);
-   99   1      }
-  100          
-  101          
-  102          
-  103          void lcd_send_string (char *str)
-  104          {
-  105   1          while (*str) lcd_send_data (*str++);
-  106   1      }
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 3   
+   78   1          //send lower nibble
+   79   1          datatosend = data & (0x0F);
+   80   1          send_to_lcd(datatosend,1);
+   81   1      
+   82   1      }
+   83          
+   84          //void lcd_clear (void)
+   85          //{
+   86          //  lcd_send_cmd(0x01);
+   87          //  HAL_Delay(2);
+   88          //}
+   89          
+   90          void lcd_put_cur(int row, int col)
+   91          {
+   92   1          switch (row)
+   93   1          {
+   94   2              case 0:
+   95   2                  col |= 0x80;
+   96   2                  break;
+   97   2              case 1:
+   98   2                  col |= 0xC0;
+   99   2                  break;
+  100   2          }
+  101   1      
+  102   1          lcd_send_cmd (col);
+  103   1      }
+  104          
+  105          
+  106          
+  107          void lcd_send_string (char *str)
+  108          {
+  109   1          while (*str) lcd_send_data (*str++);
+  110   1      }
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 3   
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -123,16 +127,16 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
 *** PUBLICS:
  PUBLIC         lcd_send_cmd?T
- PUBLIC         Delay?T
  PUBLIC         lcd_init?T
  PUBLIC         send_to_lcd?T
  PUBLIC         lcd_send_data?T
  PUBLIC         lcd_put_cur?T
  PUBLIC         lcd_send_string?T
+ PUBLIC         Delay?T
 
 
 
-*** CODE SEGMENT '?PR?Delay?T?LCD_4BIT':
+*** CODE SEGMENT '?PR?Delay?T?LCD':
     5: void Delay(unsigned int i)
  00000000  ---- Variable 'i' assigned to Register 'R0' ----
     6: {
@@ -157,7 +161,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000010          ENDP ; 'Delay?T'
 
 
-*** CODE SEGMENT '?PR?lcd_init?T?LCD_4BIT':
+*** CODE SEGMENT '?PR?lcd_init?T?LCD':
    14: void lcd_init (void)
  00000000  B500      PUSH        {LR}
    17:     Delay(10);
@@ -188,7 +192,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000026  200C      MOV         R0,#0xC
  00000028  F7FF      BL          lcd_send_cmd?T  ; T=0x0001  (1)
  0000002A  FFEA      BL          lcd_send_cmd?T  ; T=0x0001  (2)
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 4   
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 4   
 
    24: }
  0000002C  BC08      POP         {R3}
@@ -196,86 +200,107 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000030          ENDP ; 'lcd_init?T'
 
 
-*** CODE SEGMENT '?PR?send_to_lcd?T?LCD_4BIT':
+*** CODE SEGMENT '?PR?send_to_lcd?T?LCD':
    27: void send_to_lcd(char data, int rs)
- 00000000  B500      PUSH        {LR}
+ 00000000  B510      PUSH        {R4,LR}
  00000002  ---- Variable 'rs' assigned to Register 'R1' ----
- 00000002  1C02      MOV         R2,R0 ; data
- 00000004  ---- Variable 'data' assigned to Register 'R2' ----
+ 00000002  1C04      MOV         R4,R0 ; data
+ 00000004  ---- Variable 'data' assigned to Register 'R4' ----
    30:     if (rs == 1)
  00000004  1C08      MOV         R0,R1 ; rs
  00000006  2801      CMP         R0,#0x1 ; rs
- 00000008  D105      BNE         L_5  ; T=0x00000016
+ 00000008  D10D      BNE         L_5  ; T=0x00000026
    32:         IOSET0 |= (1 << 11);  // Set RS (Register Select) pin
- 0000000A  4800      LDR         R3,=0x800
+ 0000000A  4800      LDR         R2,=0x800
  0000000C  4800      LDR         R0,=0xE0028004
  0000000E  6801      LDR         R1,[R0,#0x0]
- 00000010  4319      ORR         R1,R3
+ 00000010  4311      ORR         R1,R2
  00000012  6001      STR         R1,[R0,#0x0]
-   33:     }
- 00000014  E004      B           L_6  ; T=0x00000020
- 00000016          L_5:
-   36:         IOCLR0 |= (1 << 11);  // Clear RS (Register Select) pin
- 00000016  4800      LDR         R3,=0x800
- 00000018  4800      LDR         R0,=0xE002800C
- 0000001A  6801      LDR         R1,[R0,#0x0]
- 0000001C  4319      ORR         R1,R3
- 0000001E  6001      STR         R1,[R0,#0x0]
-   37:     }
- 00000020          L_6:
-   40:     IOCLR1 |= 0x0F << 20;    // Clear data pins (P1.20 to P1.23)
- 00000020  4800      LDR         R3,=0xF00000
- 00000022  4800      LDR         R0,=0xE002801C
- 00000024  6801      LDR         R1,[R0,#0x0]
- 00000026  4319      ORR         R1,R3
- 00000028  6001      STR         R1,[R0,#0x0]
-   41:     IOSET1 |= ((data & 0x0F) << 20);  // Set data pins with the lower 4 bits of 'data'
- 0000002A  1C10      MOV         R0,R2 ; data
- 0000002C  0602      LSL         R2,R0,#0x18 ; data
- 0000002E  0E12      LSR         R2,R2,#0x18
- 00000030  200F      MOV         R0,#0xF
- 00000032  4002      AND         R2,R0
- 00000034  0512      LSL         R2,R2,#0x14
- 00000036  4800      LDR         R0,=0xE0028014
- 00000038  6801      LDR         R1,[R0,#0x0]
- 0000003A  4311      ORR         R1,R2
- 0000003C  6001      STR         R1,[R0,#0x0]
-   44:     IOSET0 |= (1 << 10);  // Set EN (Enable) pin
- 0000003E  4800      LDR         R2,=0x400
- 00000040  4800      LDR         R0,=0xE0028004
- 00000042  6801      LDR         R1,[R0,#0x0]
- 00000044  4311      ORR         R1,R2
- 00000046  6001      STR         R1,[R0,#0x0]
-   45:     Delay(10);            // Delay for a short duration
- 00000048  200A      MOV         R0,#0xA
- 0000004A  F7FF      BL          Delay?T  ; T=0x0001  (1)
- 0000004C  FFD9      BL          Delay?T  ; T=0x0001  (2)
-   46:     IOCLR0 |= (1 << 10);  // Clear EN (Enable) pin to finish sending
- 0000004E  4800      LDR         R2,=0x400
- 00000050  4800      LDR         R0,=0xE002800C
- 00000052  6801      LDR         R1,[R0,#0x0]
- 00000054  4311      ORR         R1,R2
- 00000056  6001      STR         R1,[R0,#0x0]
-   47:     Delay(10);            // Delay for a short duration
- 00000058  200A      MOV         R0,#0xA
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 5   
+   33:         IOCLR0 |= ( 1<< 20);
+ 00000014  4800      LDR         R2,=0x100000
+ 00000016  4800      LDR         R0,=0xE002800C
+ 00000018  6801      LDR         R1,[R0,#0x0]
+ 0000001A  4311      ORR         R1,R2
+ 0000001C  6001      STR         R1,[R0,#0x0]
+   34:         Delay(1000);
+ 0000001E  48FA      LDR         R0,=0x3E8
+ 00000020  F7FF      BL          Delay?T  ; T=0x0001  (1)
+ 00000022  FFEE      BL          Delay?T  ; T=0x0001  (2)
+   35:     }
+ 00000024  E00C      B           L_6  ; T=0x00000040
+ 00000026          L_5:
+   38:         IOCLR0 |= (1 << 11);  // Clear RS (Register Select) pin
+ 00000026  4800      LDR         R2,=0x800
+ 00000028  4800      LDR         R0,=0xE002800C
+ 0000002A  6801      LDR         R1,[R0,#0x0]
+ 0000002C  4311      ORR         R1,R2
+ 0000002E  6001      STR         R1,[R0,#0x0]
+   39:         IOCLR0 |= ( 1<< 20);
+ 00000030  4800      LDR         R2,=0x100000
+ 00000032  4800      LDR         R0,=0xE002800C
+ 00000034  6801      LDR         R1,[R0,#0x0]
+ 00000036  4311      ORR         R1,R2
+ 00000038  6001      STR         R1,[R0,#0x0]
+   40:         Delay(1000);
+ 0000003A  48FA      LDR         R0,=0x3E8
+ 0000003C  F7FF      BL          Delay?T  ; T=0x0001  (1)
+ 0000003E  FFE0      BL          Delay?T  ; T=0x0001  (2)
+   41:     }
+ 00000040          L_6:
+   44:     IOCLR1 |= 0xFF << 20;    // Clear data pins (P1.20 to P1.23)
+ 00000040  4800      LDR         R2,=0xFF00000
+ 00000042  4800      LDR         R0,=0xE002801C
+ 00000044  6801      LDR         R1,[R0,#0x0]
+ 00000046  4311      ORR         R1,R2
+ 00000048  6001      STR         R1,[R0,#0x0]
+   45:     IOSET1 |= ((data & 0x0F) << 20);  // Set data pins with the lower 4 bits of 'data'
+ 0000004A  1C20      MOV         R0,R4 ; data
+ 0000004C  0602      LSL         R2,R0,#0x18 ; data
+ 0000004E  0E12      LSR         R2,R2,#0x18
+ 00000050  200F      MOV         R0,#0xF
+ 00000052  4002      AND         R2,R0
+ 00000054  0512      LSL         R2,R2,#0x14
+ 00000056  4800      LDR         R0,=0xE0028014
+ 00000058  6801      LDR         R1,[R0,#0x0]
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 5   
 
- 0000005A  F7FF      BL          Delay?T  ; T=0x0001  (1)
- 0000005C  FFD1      BL          Delay?T  ; T=0x0001  (2)
-   48: }
- 0000005E  BC08      POP         {R3}
- 00000060  4718      BX          R3
- 00000062          ENDP ; 'send_to_lcd?T'
+ 0000005A  4311      ORR         R1,R2
+ 0000005C  6001      STR         R1,[R0,#0x0]
+   48:     IOSET0 |= (1 << 10);  // Set EN (Enable) pin
+ 0000005E  4800      LDR         R2,=0x400
+ 00000060  4800      LDR         R0,=0xE0028004
+ 00000062  6801      LDR         R1,[R0,#0x0]
+ 00000064  4311      ORR         R1,R2
+ 00000066  6001      STR         R1,[R0,#0x0]
+   49:     Delay(10);            // Delay for a short duration
+ 00000068  200A      MOV         R0,#0xA
+ 0000006A  F7FF      BL          Delay?T  ; T=0x0001  (1)
+ 0000006C  FFC9      BL          Delay?T  ; T=0x0001  (2)
+   50:     IOCLR0 |= (1 << 10);  // Clear EN (Enable) pin to finish sending
+ 0000006E  4800      LDR         R2,=0x400
+ 00000070  4800      LDR         R0,=0xE002800C
+ 00000072  6801      LDR         R1,[R0,#0x0]
+ 00000074  4311      ORR         R1,R2
+ 00000076  6001      STR         R1,[R0,#0x0]
+   51:     Delay(10);            // Delay for a short duration
+ 00000078  200A      MOV         R0,#0xA
+ 0000007A  F7FF      BL          Delay?T  ; T=0x0001  (1)
+ 0000007C  FFC1      BL          Delay?T  ; T=0x0001  (2)
+   52: }
+ 0000007E  BC10      POP         {R4}
+ 00000080  BC08      POP         {R3}
+ 00000082  4718      BX          R3
+ 00000084          ENDP ; 'send_to_lcd?T'
 
 
-*** CODE SEGMENT '?PR?lcd_send_cmd?T?LCD_4BIT':
-   52: void lcd_send_cmd(char cmd)
+*** CODE SEGMENT '?PR?lcd_send_cmd?T?LCD':
+   56: void lcd_send_cmd(char cmd)
  00000000  B530      PUSH        {R4-R5,LR}
  00000002  1C05      MOV         R5,R0 ; cmd
  00000004  ---- Variable 'cmd' assigned to Register 'R5' ----
-   53: {
+   57: {
  00000004            ; SCOPE-START
-   57:     datatosend = ((cmd>>4) & 0x0F);
+   61:     datatosend = ((cmd>>4) & 0x0F);
  00000004  1C28      MOV         R0,R5 ; cmd
  00000006  0604      LSL         R4,R0,#0x18 ; cmd
  00000008  0E24      LSR         R4,R4,#0x18
@@ -283,20 +308,20 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  0000000C  200F      MOV         R0,#0xF
  0000000E  4004      AND         R4,R0
  00000010  ---- Variable 'datatosend' assigned to Register 'R4' ----
-   58:     send_to_lcd(datatosend,0);
+   62:     send_to_lcd(datatosend,0);
  00000010  1C20      MOV         R0,R4 ; datatosend
  00000012  0600      LSL         R0,R0,#0x18 ; datatosend
  00000014  0E00      LSR         R0,R0,#0x18
  00000016  2100      MOV         R1,#0x0
  00000018  F7FF      BL          send_to_lcd?T  ; T=0x0001  (1)
  0000001A  FFF2      BL          send_to_lcd?T  ; T=0x0001  (2)
-   61:     datatosend = ((cmd) & 0x0F);
+   65:     datatosend = ((cmd) & 0x0F);
  0000001C  1C28      MOV         R0,R5 ; cmd
  0000001E  0604      LSL         R4,R0,#0x18 ; cmd
  00000020  0E24      LSR         R4,R4,#0x18
  00000022  200F      MOV         R0,#0xF
  00000024  4004      AND         R4,R0
-   62:     send_to_lcd(datatosend,0); 
+   66:     send_to_lcd(datatosend,0); 
  00000026  1C20      MOV         R0,R4 ; datatosend
  00000028  0600      LSL         R0,R0,#0x18 ; datatosend
  0000002A  0E00      LSR         R0,R0,#0x18
@@ -304,21 +329,23 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  0000002E  F7FF      BL          send_to_lcd?T  ; T=0x0001  (1)
  00000030  FFE7      BL          send_to_lcd?T  ; T=0x0001  (2)
  00000032            ; SCOPE-END
-   63: }
+   67: }
  00000032  BC30      POP         {R4-R5}
  00000034  BC08      POP         {R3}
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 6   
+
  00000036  4718      BX          R3
  00000038          ENDP ; 'lcd_send_cmd?T'
 
 
-*** CODE SEGMENT '?PR?lcd_send_data?T?LCD_4BIT':
-   66: void lcd_send_data(unsigned char data)
+*** CODE SEGMENT '?PR?lcd_send_data?T?LCD':
+   70: void lcd_send_data(unsigned char data)
  00000000  B530      PUSH        {R4-R5,LR}
  00000002  1C05      MOV         R5,R0 ; data
  00000004  ---- Variable 'data' assigned to Register 'R5' ----
-   67: {
+   71: {
  00000004            ; SCOPE-START
-   71:     datatosend = ((data >>4) & 0x0F);
+   75:     datatosend = ((data >>4) & 0x0F);
  00000004  1C28      MOV         R0,R5 ; data
  00000006  0604      LSL         R4,R0,#0x18 ; data
  00000008  0E24      LSR         R4,R4,#0x18
@@ -326,22 +353,20 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  0000000C  200F      MOV         R0,#0xF
  0000000E  4004      AND         R4,R0
  00000010  ---- Variable 'datatosend' assigned to Register 'R4' ----
-   72:     send_to_lcd(datatosend,1);
+   76:     send_to_lcd(datatosend,1);
  00000010  1C20      MOV         R0,R4 ; datatosend
  00000012  0600      LSL         R0,R0,#0x18 ; datatosend
  00000014  0E00      LSR         R0,R0,#0x18
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 6   
-
  00000016  2101      MOV         R1,#0x1
  00000018  F7FF      BL          send_to_lcd?T  ; T=0x0001  (1)
  0000001A  FFF2      BL          send_to_lcd?T  ; T=0x0001  (2)
-   75:     datatosend = data & (0x0F);
+   79:     datatosend = data & (0x0F);
  0000001C  1C28      MOV         R0,R5 ; data
  0000001E  0604      LSL         R4,R0,#0x18 ; data
  00000020  0E24      LSR         R4,R4,#0x18
  00000022  200F      MOV         R0,#0xF
  00000024  4004      AND         R4,R0
-   76:     send_to_lcd(datatosend,1);
+   80:     send_to_lcd(datatosend,1);
  00000026  1C20      MOV         R0,R4 ; datatosend
  00000028  0600      LSL         R0,R0,#0x18 ; datatosend
  0000002A  0E00      LSR         R0,R0,#0x18
@@ -349,61 +374,61 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  0000002E  F7FF      BL          send_to_lcd?T  ; T=0x0001  (1)
  00000030  FFE7      BL          send_to_lcd?T  ; T=0x0001  (2)
  00000032            ; SCOPE-END
-   78: }
+   82: }
  00000032  BC30      POP         {R4-R5}
  00000034  BC08      POP         {R3}
  00000036  4718      BX          R3
  00000038          ENDP ; 'lcd_send_data?T'
 
 
-*** CODE SEGMENT '?PR?lcd_put_cur?T?LCD_4BIT':
-   86: void lcd_put_cur(int row, int col)
+*** CODE SEGMENT '?PR?lcd_put_cur?T?LCD':
+   90: void lcd_put_cur(int row, int col)
  00000000  B500      PUSH        {LR}
  00000002  ---- Variable 'col' assigned to Register 'R1' ----
  00000002  1C02      MOV         R2,R0 ; row
  00000004  ---- Variable 'row' assigned to Register 'R2' ----
-   88:     switch (row)
+   92:     switch (row)
  00000004  1C10      MOV         R0,R2 ; row
  00000006  2801      CMP         R0,#0x1 ; row
  00000008  D004      BEQ         L_9  ; T=0x00000014
  0000000A  2800      CMP         R0,#0x0 ; row
  0000000C  D104      BNE         L_7  ; T=0x00000018
-   90:         case 0:
+   94:         case 0:
  0000000E          L_8:
-   91:             col |= 0x80;
+   95:             col |= 0x80;
  0000000E  2080      MOV         R0,#0x80
  00000010  4301      ORR         R1,R0
-   92:             break;
+   96:             break;
  00000012  E001      B           L_7  ; T=0x00000018
-   93:         case 1:
+   97:         case 1:
  00000014          L_9:
-   94:             col |= 0xC0;
+   98:             col |= 0xC0;
  00000014  20C0      MOV         R0,#0xC0
+ARM COMPILER V2.40a,  LCD                                                                  06/09/23  19:45:35  PAGE 7   
+
  00000016  4301      ORR         R1,R0
-   96:     }
+  100:     }
  00000018          L_7:
-   98:     lcd_send_cmd (col);
+  102:     lcd_send_cmd (col);
  00000018  1C08      MOV         R0,R1 ; col
  0000001A  F7FF      BL          lcd_send_cmd?T  ; T=0x0001  (1)
  0000001C  FFF1      BL          lcd_send_cmd?T  ; T=0x0001  (2)
-   99: }
+  103: }
  0000001E  BC08      POP         {R3}
  00000020  4718      BX          R3
  00000022          ENDP ; 'lcd_put_cur?T'
 
 
-*** CODE SEGMENT '?PR?lcd_send_string?T?LCD_4BIT':
-  103: void lcd_send_string (char *str)
+*** CODE SEGMENT '?PR?lcd_send_string?T?LCD':
+  107: void lcd_send_string (char *str)
  00000000  B510      PUSH        {R4,LR}
  00000002  1C04      MOV         R4,R0 ; str
  00000004  ---- Variable 'str' assigned to Register 'R4' ----
-  105:     while (*str) lcd_send_data (*str++);
+  109:     while (*str) lcd_send_data (*str++);
  00000004  E004      B           L_10  ; T=0x00000010
  00000006          L_12:
  00000006  1C20      MOV         R0,R4 ; str
  00000008  3401      ADD         R4,#0x1
-ARM COMPILER V2.40a,  LCD_4BIT                                                             06/09/23  19:17:41  PAGE 7   
-
  0000000A  7800      LDRB        R0,[R0,#0x0] ; str
  0000000C  F7FF      BL          lcd_send_data?T  ; T=0x0001  (1)
  0000000E  FFF8      BL          lcd_send_data?T  ; T=0x0001  (2)
@@ -412,7 +437,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000012  7800      LDRB        R0,[R0,#0x0] ; str
  00000014  2800      CMP         R0,#0x0
  00000016  D1F6      BNE         L_12  ; T=0x00000006
-  106: }
+  110: }
  00000018  BC10      POP         {R4}
  0000001A  BC08      POP         {R3}
  0000001C  4718      BX          R3

@@ -1,5 +1,5 @@
 #include "lpc214x.h"
-
+#include "LCD.h"
 void lcd_send_cmd(char cmd);
 
 void Delay(unsigned int i)
@@ -30,14 +30,18 @@ void send_to_lcd(char data, int rs)
     if (rs == 1)
     {
         IOSET0 |= (1 << 11);  // Set RS (Register Select) pin
+		IOCLR0 |= (	1<<	20);
+		Delay(1000);
     }
     else
     {
         IOCLR0 |= (1 << 11);  // Clear RS (Register Select) pin
+		IOCLR0 |= (	1<<	20);
+		Delay(1000);
     }
 
     // Set data pins (P1.20 to P1.23) with the lower 4 bits of 'data'
-    IOCLR1 |= 0x0F << 20;    // Clear data pins (P1.20 to P1.23)
+    IOCLR1 |= 0xFF << 20;    // Clear data pins (P1.20 to P1.23)
     IOSET1 |= ((data & 0x0F) << 20);  // Set data pins with the lower 4 bits of 'data'
 
     // Toggle EN (Enable) pin (P0.20) to send the data
