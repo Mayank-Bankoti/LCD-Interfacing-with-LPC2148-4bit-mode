@@ -1,5 +1,6 @@
 "Startup.obj",
-"yash.obj" 
+"LCD.obj",
+"main.obj" 
 TO "LCD_4BIT" 
 CASE 
 CLASSES (DATA (0x40000000-0x40007FFF), 

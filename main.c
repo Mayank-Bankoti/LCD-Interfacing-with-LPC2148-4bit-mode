@@ -6,10 +6,10 @@ int main()
     PINSEL0  = 0x00000000;
     PINSEL1  = 0x00000000;
 	PINSEL2  = 0x00000000;
-	IODIR0 |= (1 << 10);
-	IODIR0 |= (1 << 11);
-	IODIR0 |= (1 << 20);
-	IODIR1 |= (0xFF << 20);
+	IODIR0 |= (1 << 10);  //EM
+	IODIR0 |= (1 << 11);  //RS
+	IODIR0 |= (1 << 20);  //RW
+	IODIR1 |= (0xF << 20);
 //IODIR0 = 0x00100c00;
 //	IODIR1= 0x00FF0000;
     lcd_init();
@@ -20,5 +20,6 @@ int main()
         lcd_send_string("FERGUSSON");
         lcd_put_cur(1, 0);
         lcd_send_string("COLLEGE");
-    }
+		Delay(1000);
+    }			  
 }
