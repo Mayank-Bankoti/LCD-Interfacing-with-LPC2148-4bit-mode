@@ -5,25 +5,25 @@ void Delay(unsigned int time)
 {
 unsigned int i, j;
 for(i=0; i<time; i++)
-	for(j-=0; j<1000; j++);
+	for(j-=0; j<10000; j++);
 }
 
 void lcd_init (void)
 {
 
-	Delay(100);
+	Delay(1000);
 	lcd_send_cmd(0x02);
-	Delay(100);
+	Delay(1000);
 	lcd_send_cmd(0x28); // Function set --> DL=0 (4 bit mode), N = 1 (2 line display) F = 0 (5x8 characters)
-	Delay(100);
+	Delay(1000);
 	lcd_send_cmd(0x08); //Display on/off control --> D=0,C=0, B=0  ---> display off
-	Delay(100);
+	Delay(1000);
 	lcd_send_cmd(0x01);  // clear display
-	Delay(100);
+	Delay(1000);
 	lcd_send_cmd(0x06); //Entry mode set --> I/D = 1 (increment cursor) & S = 0 (no shift)
-	Delay(100);
+	Delay(1000);
 	lcd_send_cmd(0x0C); //Display on/off control --> D = 1, C and B = 0. (Cursor and blink, last two bits)
-	Delay(100);
+	Delay(1000);
 }
 
 
@@ -45,7 +45,9 @@ void send_to_lcd(char data, int rs)
 
     // Set data pins (P1.20 to P1.23) with the lower 4 bits of 'data'
     IOCLR1 |= 0xF << 20;    // Clear data pins (P1.20 to P1.23)
+	Delay(1000);
     IOSET1 |= ((data) << 20);  // Set data pins with the lower 4 bits of 'data'
+	Delay(1000);
 
     // Toggle EN (Enable) pin (P0.20) to send the data
     IOSET0 |= (1 << 10);  // Set EN (Enable) pin
@@ -63,10 +65,13 @@ void lcd_send_cmd(unsigned char cmd)
 	//Send Upper nibble firsr
 	datatosend = ((cmd>>4) & 0x0F);
 	send_to_lcd(datatosend,0);
+	 Delay(100);
+
 
 	// Send lower nibble
 	datatosend = ((cmd) & 0x0F);
-	send_to_lcd(datatosend,0); 
+	send_to_lcd(datatosend,0);
+	Delay(1000); 
 }
 
 
@@ -77,18 +82,14 @@ void lcd_send_data(unsigned char data)
 	//Send the higher nibble first
 	datatosend = ((data >>4) & 0x0F);
 	send_to_lcd(datatosend,1);
-
+    Delay(1000);
 	//send lower nibble
 	datatosend = data & (0x0F);
 	send_to_lcd(datatosend,1);
+	Delay(1000);
 
 }
 
-//void lcd_clear (void)
-//{
-//	lcd_send_cmd(0x01);
-//	HAL_Delay(2);
-//}
 
 void lcd_put_cur(int row, int col)
 {

@@ -6,7 +6,6 @@ Target (Target 1), 0x0005 // Tools: ''
 Group (Source Group 1)
 
 File 1,2,<.\Startup.s><Startup.s> 0x0 
-File 1,5,<.\LCD.h><LCD.h> 0x0 
 File 1,1,<.\LCD.c><LCD.c> 0x0 
 File 1,1,<.\main.c><main.c> 0x0 
 
@@ -37,7 +36,7 @@ Options 1,0,0  // Target 'Target 1'
  OrgReg (ÿPhilips\)
  TgStat=16
  OutDir (.\)
- OutName (LCD_4BIT)
+ OutName (LCD_4bit)
  GenApp=1
  GenLib=0
  GenHex=1

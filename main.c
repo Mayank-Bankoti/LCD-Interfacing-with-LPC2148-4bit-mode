@@ -13,13 +13,14 @@ int main()
 //IODIR0 = 0x00100c00;
 //	IODIR1= 0x00FF0000;
     lcd_init();
-
+	Delay(1000);
     while (1)
     {
         lcd_put_cur(0, 0);
-        lcd_send_string("FERGUSSON");
+        lcd_send_string("Embedded Systems");
+		Delay(1000);
         lcd_put_cur(1, 0);
-        lcd_send_string("COLLEGE");
+        lcd_send_string("Electronics");
 		Delay(1000);
     }			  
 }
