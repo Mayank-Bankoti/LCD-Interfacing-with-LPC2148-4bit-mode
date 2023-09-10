@@ -1,4 +1,4 @@
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 1   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 1   
 
 
 ARM COMPILER V2.40a, COMPILATION OF MODULE LCD
@@ -66,7 +66,7 @@ stmt  level    source
    57   1      }
    58          
    59          
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 2   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 2   
 
    60          
    61          void lcd_send_cmd(unsigned char cmd)
@@ -123,7 +123,7 @@ stmt  level    source
   112          {
   113   1          while (*str) lcd_send_data (*str++);
   114   1      }
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 3   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 3   
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -196,7 +196,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
    18:     Delay(1000);
  0000001A  48FA      LDR         R0,=0x3E8
  0000001C  F7FF      BL          Delay?T  ; T=0x0001  (1)
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 4   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 4   
 
  0000001E  FFF0      BL          Delay?T  ; T=0x0001  (2)
    19:     lcd_send_cmd(0x08); //Display on/off control --> D=0,C=0, B=0  ---> display off
@@ -266,7 +266,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000020  6801      LDR         R1,[R0,#0x0]
  00000022  4311      ORR         R1,R2
  00000024  6001      STR         R1,[R0,#0x0]
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 5   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 5   
 
    43:         Delay(1000);
  00000026  48FA      LDR         R0,=0x3E8
@@ -336,7 +336,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000006  0604      LSL         R4,R0,#0x18 ; cmd
  00000008  0E24      LSR         R4,R4,#0x18
  0000000A  0924      LSR         R4,R4,#0x4
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 6   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 6   
 
  0000000C  200F      MOV         R0,#0xF
  0000000E  4004      AND         R4,R0
@@ -406,7 +406,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
    87:     datatosend = data & (0x0F);
  00000022  1C28      MOV         R0,R5 ; data
  00000024  0604      LSL         R4,R0,#0x18 ; data
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 7   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 7   
 
  00000026  0E24      LSR         R4,R4,#0x18
  00000028  200F      MOV         R0,#0xF
@@ -478,7 +478,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
  00000008  3401      ADD         R4,#0x1
  0000000A  7800      LDRB        R0,[R0,#0x0] ; str
  0000000C  F7FF      BL          lcd_send_data?T  ; T=0x0001  (1)
-ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:26:01  PAGE 8   
+ARM COMPILER V2.40a,  LCD                                                                  10/09/23  08:33:46  PAGE 8   
 
  0000000E  FFF8      BL          lcd_send_data?T  ; T=0x0001  (2)
  00000010          L_16:

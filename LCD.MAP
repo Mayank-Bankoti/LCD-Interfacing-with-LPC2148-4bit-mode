@@ -1,9 +1,9 @@
-LARM LINKER/LOCATER V2.40                                                               09/10/2023  08:26:01  PAGE 1
+LARM LINKER/LOCATER V2.40                                                               09/10/2023  08:33:47  PAGE 1
 
 
 LARM LINKER/LOCATER V2.40, INVOKED BY:
-C:\KEIL\ARM\BIN\LA.EXE Startup.obj, LCD.obj, main.obj TO LCD_4bit CASE CLASSES (DATA (0X40000000-0X40007FFF), CODE (0X0-
->> 0X7FFFF), CONST (0X0-0X7FFFF))
+C:\KEIL\ARM\BIN\LA.EXE Startup.obj, LCD.obj, main.obj TO LCD CASE CLASSES (DATA (0X40000000-0X40007FFF), CODE (0X0-0X7FF
+>> FF), CONST (0X0-0X7FFFF))
 
 
 CPU MODE: LITTLE ENDIAN
@@ -30,7 +30,7 @@ INPUT MODULES INCLUDED:
          COMMENT TYPE 0: AA V2.40a
 
 
-ACTIVE MEMORY CLASSES OF MODULE:  LCD_4bit (STARTUP)
+ACTIVE MEMORY CLASSES OF MODULE:  LCD (STARTUP)
 
 BASE       START      END        USED       MEMORY CLASS
 ========================================================
@@ -40,7 +40,7 @@ BASE       START      END        USED       MEMORY CLASS
 
 
 
-MEMORY MAP OF MODULE:  LCD_4bit (STARTUP)
+MEMORY MAP OF MODULE:  LCD (STARTUP)
 
 START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
 =========================================================================
@@ -67,10 +67,10 @@ START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
 
 
 
-LARM LINKER/LOCATER V2.40                                                             09/10/2023  08:26:01  PAGE 2
+LARM LINKER/LOCATER V2.40                                                             09/10/2023  08:33:47  PAGE 2
 
 
-PUBLIC SYMBOLS OF MODULE:  LCD_4bit (STARTUP)
+PUBLIC SYMBOLS OF MODULE:  LCD (STARTUP)
 
       VALUE      CLASS    TYPE      PUBLIC SYMBOL NAME
       ================================================

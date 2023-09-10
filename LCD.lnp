@@ -1,7 +1,7 @@
 "Startup.obj",
 "LCD.obj",
 "main.obj" 
-TO "LCD_4bit" 
+TO "LCD" 
 CASE 
 CLASSES (DATA (0x40000000-0x40007FFF), 
 CODE (0x0-0x7FFFF), CONST (0x0-0x7FFFF)) 
